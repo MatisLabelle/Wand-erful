@@ -44,8 +44,8 @@ public class joueur : MonoBehaviour
         }
         else if (other.tag == "porte_entre")
         {
-            //ampoule.SetActive(true);
-            //ampoule2.SetActive(true);
+            ampoule.SetActive(true);
+            ampoule2.SetActive(true);
             porteEntre.Play("DoorOpen");
         }
         else if (other.tag == "statue")
