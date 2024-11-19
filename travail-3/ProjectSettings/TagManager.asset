@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - television
+  - porte_entre
+  - porte_sortie
+  - spotlight
+  - boulet
   layers:
   - Default
   - TransparentFX
