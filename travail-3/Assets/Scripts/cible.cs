@@ -5,6 +5,7 @@ using UnityEngine;
 public class cible : MonoBehaviour
 {
     public GameObject particules;
+    public GameObject boulet; 
 
     public compteTir script;
     private bool stop;
@@ -15,6 +16,7 @@ public class cible : MonoBehaviour
         if (other.tag == "boulet" && stop == false)
         {
             stop = true;
+            boulet = other.gameObject;
             StartCoroutine("burst");
         }
 
@@ -24,9 +26,12 @@ public class cible : MonoBehaviour
     {
 
         particules.SetActive(true);
-        gameObject.GetComponent<Renderer>().enabled = false;
-        yield return new WaitForSeconds(1f);
+        particules.GetComponent<ParticleSystem>().Play();
+        Destroy(boulet);
+        // gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+       
         script.compte();
         yield return new WaitForSeconds(1f);
 

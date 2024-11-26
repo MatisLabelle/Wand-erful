@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class tir : MonoBehaviour
 {
@@ -10,13 +12,31 @@ public class tir : MonoBehaviour
 
     public GameObject canonBall;
     public Transform shotPoint;
+    private bool bouclier;
     private bool pret;
-     
 
+    public GameObject shield;
+
+    [SerializeField] private InputActionProperty shieldButton;
+
+
+    private void Update()
+    {
+        if (shieldButton.action.IsPressed())
+        {
+            apparaitre();
+            bouclier = true;
+        }
+        else 
+        {
+            disparaitre();
+            bouclier = false;
+        }
+
+    }
 
     public void tirer()
     {
-
         float HorizontalRotation = Input.GetAxis("Horizontal");
         float VerticalRotation = Input.GetAxis("Vertical");
 
@@ -24,7 +44,15 @@ public class tir : MonoBehaviour
         StartCoroutine("Feu");
     }
 
+    public void apparaitre()
+    {
+        shield.SetActive(true);
+    }
 
+    public void disparaitre()
+    {
+        shield.SetActive(false);
+    }
 
     IEnumerator Feu()
     {
@@ -38,5 +66,5 @@ public class tir : MonoBehaviour
         yield break;
     }
 
-   
+
 }
