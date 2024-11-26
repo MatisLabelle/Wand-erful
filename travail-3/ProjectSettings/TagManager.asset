@@ -9,6 +9,7 @@ TagManager:
   - porte_sortie
   - spotlight
   - boulet
+  - potion
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - potion
+  - paper
   - 
   - 
   - 
