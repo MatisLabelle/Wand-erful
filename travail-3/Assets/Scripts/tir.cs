@@ -11,12 +11,12 @@ public class tir : MonoBehaviour
     public GameObject canonBall;
     public Transform shotPoint;
     private bool pret;
-     
+
+    public GameObject shield;
 
 
     public void tirer()
     {
-
         float HorizontalRotation = Input.GetAxis("Horizontal");
         float VerticalRotation = Input.GetAxis("Vertical");
 
@@ -24,7 +24,15 @@ public class tir : MonoBehaviour
         StartCoroutine("Feu");
     }
 
+    public void apparaitre()
+    {
+        shield.SetActive(true);
+    }
 
+    public void disparaitre()
+    {
+        shield.SetActive(false);
+    }
 
     IEnumerator Feu()
     {
@@ -38,5 +46,5 @@ public class tir : MonoBehaviour
         yield break;
     }
 
-   
+
 }
