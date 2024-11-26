@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class tir : MonoBehaviour
 {
@@ -10,10 +12,28 @@ public class tir : MonoBehaviour
 
     public GameObject canonBall;
     public Transform shotPoint;
+    private bool bouclier;
     private bool pret;
 
     public GameObject shield;
 
+    [SerializeField] private InputActionProperty shieldButton;
+
+
+    private void Update()
+    {
+        if (shieldButton.action.IsPressed())
+        {
+            apparaitre();
+            bouclier = true;
+        }
+        else 
+        {
+            disparaitre();
+            bouclier = false;
+        }
+
+    }
 
     public void tirer()
     {

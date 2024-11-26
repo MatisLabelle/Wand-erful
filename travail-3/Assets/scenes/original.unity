@@ -51810,6 +51810,19 @@ MonoBehaviour:
     type: 3}
   shotPoint: {fileID: 2058668608}
   shield: {fileID: 745039915}
+  shieldButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Shield Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 204b2a37-89d0-49ed-9924-d5e737f87431
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4377500190134740119, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!114 &1549070871
 MonoBehaviour:
   m_ObjectHideFlags: 0
