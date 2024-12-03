@@ -38,20 +38,30 @@ public class EnnemiAi : MonoBehaviour
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
-    private void AttackPlayer()
+    public IEnumerator attaque()
     {
-        if (!alreadyAttacked)
+         if (!alreadyAttacked)
         {
             //Lorsqu'il attaque
             Rigidbody rb = Instantiate(projectile, new Vector3(spawnFlech.position.x, spawnFlech.position.y, spawnFlech.position.z), Quaternion.identity).GetComponent<Rigidbody>();
            rb.AddForce(transform.forward * -1, ForceMode.Impulse);
-          // rb.AddForce(transform.up * 2, ForceMode.Impulse);
-
+            // rb.AddForce(transform.up * 2, ForceMode.Impulse);
+              
             //
             alreadyAttacked = true;
+            //yield return new WaitForSeconds(1f);
+            //Destroy(rb.gameObject);
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
-
+            
         }
+        
+
+        yield break; 
+    }
+
+    private void AttackPlayer()
+    {
+        StartCoroutine("attaque");
     }
     private void ResetAttack()
     {

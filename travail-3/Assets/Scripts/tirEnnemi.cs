@@ -66,7 +66,7 @@ public class tirEnnemi : MonoBehaviour
         createdCanonball.GetComponent<Rigidbody>().velocity = shotPoint.transform.forward * BlastPower;
         yield return new WaitForSeconds(1f);
         pret = false;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(createdCanonball);
         yield break;
     }
