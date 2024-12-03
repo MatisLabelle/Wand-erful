@@ -960,8 +960,8 @@
                 },
                 {
                     "name": "",
-                    "id": "710bf15e-4c93-4ecb-9f02-ebb681e7f27b",
-                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "id": "c908ca69-eb62-4500-9b9d-1b5a1273e6cf",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1597,6 +1597,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "shield",
+                    "type": "Button",
+                    "id": "0d09d5ab-f32b-4399-a732-9bb8ff7ab911",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1762,6 +1771,17 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81fb2a2b-2c66-4067-ab74-850c63c2eda1",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shield",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

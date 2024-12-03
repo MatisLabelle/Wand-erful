@@ -28,6 +28,8 @@ public class tirEnnemi : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if (playerInAttackRange && playerInSightRange) tirer();
+
+        if (playerInAttackRange && playerInSightRange);
     }
 
     public void tirer()
