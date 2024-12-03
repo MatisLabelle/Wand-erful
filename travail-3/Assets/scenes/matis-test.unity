@@ -11496,7 +11496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 535255131}
   m_Layer: 0
-  m_Name: archer (2)
+  m_Name: boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11510,16 +11510,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535255130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -115.79, y: 2.104633, z: -3.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.9767507, z: -0, w: 0.2143784}
+  m_LocalPosition: {x: -111.8, y: 4.55, z: -3.6}
+  m_LocalScale: {x: 2.2290757, y: 2.2290757, z: 2.2290757}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 623824073}
   - {fileID: 1170564482}
   - {fileID: 304477899}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -155.242, z: 0}
 --- !u!1001 &535870663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18770,8 +18770,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8160698346945691214, guid: f661422815d8f204cb5f6dcf10f7e3d2, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 951211890431543052, guid: f661422815d8f204cb5f6dcf10f7e3d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2115184270}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f661422815d8f204cb5f6dcf10f7e3d2, type: 3}
 --- !u!1001 &852601178
@@ -38163,7 +38168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48aa215967461d49974dc5a57acd061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1
+  rotationSpeed: 5
   BlastPower: 20
   whatIsGround:
     serializedVersion: 2
@@ -38171,13 +38176,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 128
-  timeBetweenAttacks: 3
+  timeBetweenAttacks: 0.5
   canonBall: {fileID: 3526471433194178318, guid: d8f2c21861c649d4c861630aaed13b50,
     type: 3}
   shotPoint: {fileID: 1130184443}
   archer: {fileID: 535255131}
   joueur: {fileID: 137650596}
-  sightRange: 5
+  sightRange: 10
   attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -46100,6 +46105,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446930, guid: 77ad9661321c6e84280c8fbe32492c06,
     type: 3}
   m_PrefabInstance: {fileID: 883461805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2115184269
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1170564482}
+    m_Modifications:
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08238767
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.118
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.02478493
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9984276
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.045636248
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0313186
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.008877735
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -5.197
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.647
+      objectReference: {fileID: 0}
+    - target: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108490044900275105, guid: 612f74c8fd471b64185d45d4daf4610b,
+        type: 3}
+      propertyPath: m_Name
+      value: Rigged_CrossBow_Testing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 612f74c8fd471b64185d45d4daf4610b, type: 3}
+--- !u!4 &2115184270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 300040772682918171, guid: 612f74c8fd471b64185d45d4daf4610b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2115184269}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2121524007
 PrefabInstance:
