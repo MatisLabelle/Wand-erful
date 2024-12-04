@@ -1,34 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Video;
+using UnityEngine.InputSystem;
 
-public class compteTir : MonoBehaviour
+public class cibleFleche : MonoBehaviour
 {
-    public int count;
+    public int compte;
 
     public GameObject bravo;
     public GameObject restart;
     public GameObject monJoueur;
     public GameObject dollards;
     public GameObject startPosition;
+    public InputActionAsset inputActions;
 
-
-    private IEnumerator reussite()
+    private IEnumerator Reussite()
     {
+        inputActions.Disable();
         bravo.SetActive(true);
         Debug.Log("Bravo activé");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         restart.SetActive(true);
         yield break;
     }
 
-    public void recommencer()
+    public void Recommencer()
     {
         bravo.SetActive(false);
         restart.SetActive(false);
+        inputActions.Enable();
 
         monJoueur.transform.position = startPosition.transform.position;
 
@@ -37,15 +37,18 @@ public class compteTir : MonoBehaviour
             dollards.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
         }
     }
-    public void compte()
+
+    private void OnTriggerEnter(Collider other)
     {
-        count += 1;
-        if (count >= 1)
+        if (other.tag != "fleche")
+        {
+            return;
+        }
+        compte += 1;
+        if (compte >= 10)
         {
             Debug.Log("Dead");
-            StartCoroutine(reussite());
+            StartCoroutine(Reussite());
         }
     }
-
-    
 }

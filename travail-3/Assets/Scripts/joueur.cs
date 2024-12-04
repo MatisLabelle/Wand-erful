@@ -8,8 +8,6 @@ public class joueur : MonoBehaviour
 {
     public GameObject ampoule;
     public GameObject ampoule2;
-    public GameObject bravo;
-    public GameObject btnRestart;
     public GameObject quitter;
     public GameObject statues;
     public CharacterController player;
@@ -84,28 +82,6 @@ public class joueur : MonoBehaviour
             porteEntre.Play("DoorClose");
         }
        
-    }
-
-
-    private IEnumerator Reussite()
-    {
-        bravo.SetActive(true);
-        yield return new WaitForSeconds(5f);
-        btnRestart.SetActive(true);
-        yield break;
-    }
-
-    public void miseAZero()
-    {
-        bravo.SetActive(false);
-        btnRestart.SetActive(false);
-        count = 0;
-        pointage.text = count.ToString();
-
-        for (int i = 0; i < statues.transform.childCount; i++)
-        {
-            statues.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
-        }
     }
 
     public void fermerJeu()
