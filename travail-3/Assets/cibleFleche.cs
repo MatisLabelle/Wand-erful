@@ -12,7 +12,7 @@ public class cibleFleche : MonoBehaviour
         if (other.tag == "fleche")
         {
             compte += 1;
-            if (compte >= 4)
+            if (compte >= 10)
             {
                 Debug.Log("Dead");
             }

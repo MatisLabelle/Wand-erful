@@ -12,9 +12,9 @@ public class compteTir : MonoBehaviour
     public void compte()
     {
         count += 1;
-        if (count >= 4)
+        if (count >= 10)
         {
-            Debug.Log("Ye");
+            Debug.Log("Dead");
         }
     }
 
