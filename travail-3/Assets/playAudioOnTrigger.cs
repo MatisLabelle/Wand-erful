@@ -8,6 +8,7 @@ public class playAudioOnTrigger : MonoBehaviour
     public AudioClip clip;
     private AudioSource source;
     public string targetTag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,4 +23,12 @@ public class playAudioOnTrigger : MonoBehaviour
         }
     }
 
+    // Arrêter l'audio lorsque l'objet quitte la zone
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(targetTag) && source.isPlaying)
+        {
+            source.Stop();
+        }
+    }
 }
