@@ -11,6 +11,8 @@ TagManager:
   - boulet
   - potion
   - fleche
+  - archer
+  - particle
   layers:
   - Default
   - TransparentFX
