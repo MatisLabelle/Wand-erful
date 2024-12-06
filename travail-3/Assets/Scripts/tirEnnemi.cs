@@ -21,6 +21,28 @@ public class tirEnnemi : MonoBehaviour
 
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+    public AudioClip arrowSoundClip;
+    private AudioSource audioSource;
+
+
+    private void Start()
+    {
+        // Get or add the AudioSource component dynamically
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Optionally preload the clip if set in Inspector
+        if (arrowSoundClip != null)
+        {
+            audioSource.clip = arrowSoundClip;
+        }
+    }
+
+
+
     private void Update()
     {
         //trouve et tir
@@ -43,9 +65,15 @@ public class tirEnnemi : MonoBehaviour
             //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, HorizontalRotation * rotationSpeed, VerticalRotation * rotationSpeed));
 
             Vector3 direction = joueur.position - archer.position;
-           // direction.y = 0;  // On ignore la rotation sur l'axe Y (évite que l'ennemi se penche en avant ou en arrière)
+           // direction.y = 0;  // On ignore la rotation sur l'axe Y (ï¿½vite que l'ennemi se penche en avant ou en arriï¿½re)
             archer.rotation = Quaternion.LookRotation(direction)*Quaternion.Euler(0f, 95f,0f);
            //archer.rotation = Quaternion.Slerp(archer.rotation, rotation, Time.deltaTime * 5f);  // Lerp pour un mouvement plus fluide
+
+            // Play the arrow sound
+        if (arrowSoundClip != null)
+        {
+            audioSource.PlayOneShot(arrowSoundClip);
+        }
 
 
             StartCoroutine("Feu");

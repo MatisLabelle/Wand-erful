@@ -19,6 +19,18 @@ public class tir : MonoBehaviour
 
     [SerializeField] private InputActionProperty shieldButton;
 
+    
+    public AudioClip tirSound;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
     private void Update()
     {
@@ -41,6 +53,12 @@ public class tir : MonoBehaviour
         float VerticalRotation = Input.GetAxis("Vertical");
 
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, HorizontalRotation * rotationSpeed, VerticalRotation * rotationSpeed));
+
+        if (tirSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(tirSound);
+        }
+
         StartCoroutine("Feu");
     }
 
