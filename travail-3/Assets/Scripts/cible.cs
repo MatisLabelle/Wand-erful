@@ -62,7 +62,6 @@ public class cible : MonoBehaviour
 
     private void Die()
     {
-        StartCoroutine(Reussite()); // Lance la coroutine
         Debug.Log("Le boss est détruit !");
         boss.SetActive(false); // Désactive le boss
         script.compte(); // Compte le tir final ou déclenche une action spécifique

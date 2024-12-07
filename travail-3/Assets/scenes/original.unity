@@ -86973,7 +86973,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1903656080}
-  - component: {fileID: 1903656083}
   - component: {fileID: 1903656082}
   - component: {fileID: 1903656081}
   - component: {fileID: 1903656084}
@@ -87050,28 +87049,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1903656083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903656079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec7ce300efe942f47ae98441e0d37a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particules: {fileID: 1384566928}
-  boulet: {fileID: 0}
-  script: {fileID: 938723019}
-  health: 10
-  compte: 0
-  bravo: {fileID: 1082825878}
-  monJoueur: {fileID: 885348164}
-  dollards: {fileID: 1143439602}
-  startPosition: {fileID: 546201394}
-  boss: {fileID: 1550710372}
 --- !u!114 &1903656084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87089,6 +87066,10 @@ MonoBehaviour:
   dollards: {fileID: 1143439602}
   startPosition: {fileID: 546201394}
   boss: {fileID: 1550710372}
+  particules: {fileID: 1384566928}
+  boulet: {fileID: 0}
+  script: {fileID: 938723019}
+  health: 10
 --- !u!1001 &1904160291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87514,7 +87495,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
