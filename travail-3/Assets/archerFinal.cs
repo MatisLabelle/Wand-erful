@@ -1,34 +1,46 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-public class cibleFleche : MonoBehaviour
+public class archerFinal : MonoBehaviour
 {
-    public int compte;
-
     public GameObject bravo;
     public GameObject monJoueur;
     public GameObject dollards;
     public GameObject startPosition;
-    public InputActionAsset inputActions;
+
+    public GameObject boss;
+    private void Die()
+    {
+        StartCoroutine(Reussite()); // Lance la coroutine
+        Debug.Log("Le boss est détruit !");
+        boss.SetActive(false); // Désactive le boss
+
+        // Facultatif : Jouer un effet de destruction (particules, sons, etc.)
+    }
+
 
     private IEnumerator Reussite()
     {
-        inputActions.Disable(); // Désactive les entrées
         bravo.SetActive(true); // Active l'objet "Bravo"
         Debug.Log("Bravo activé");
 
         yield return new WaitForSeconds(3f); // Attend 3 secondes
 
-        Recommencer(); // Appelle la méthode Recommencer
+        ReloadScene(); // Appelle la méthode Recommencer
     }
 
+    public void ReloadScene()
+    {
+        // Recharge la scène active
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void Recommencer()
     {
         Debug.Log("Recommencer appelé !");
 
         bravo.SetActive(false); // Désactive l'objet "Bravo"
-        inputActions.Enable(); // Réactive les entrées
 
         // Replace le joueur à la position de départ
         if (startPosition != null && monJoueur != null)
@@ -59,21 +71,6 @@ public class cibleFleche : MonoBehaviour
         else
         {
             Debug.LogWarning("dollards n'est pas assigné !");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("fleche"))
-        {
-            compte += 1; // Incrémente le compteur
-
-            if (compte >= 10)
-            {
-                Debug.Log("Dead");
-                StartCoroutine(Reussite()); // Lance la coroutine
-                compte = 0;
-            }
         }
     }
 }

@@ -16,6 +16,7 @@ public class tir : MonoBehaviour
     private bool pret;
 
     public GameObject shield;
+    public GameObject boss;
 
     [SerializeField] private InputActionProperty shieldButton;
 
@@ -83,6 +84,7 @@ public class tir : MonoBehaviour
         Destroy(createdCanonball);
         yield break;
     }
+
 
 
 }
