@@ -10948,11 +10948,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!1001 &297529275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15410,11 +15405,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!4 &391222292
 Transform:
   m_ObjectHideFlags: 0
@@ -22751,11 +22741,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &557449839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25728,11 +25713,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!4 &640862201
 Transform:
   m_ObjectHideFlags: 0
@@ -34503,11 +34483,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!54 &818907248
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46049,11 +46024,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!4 &1066748724
 Transform:
   m_ObjectHideFlags: 0
@@ -49791,11 +49761,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &1124380419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51242,11 +51207,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!4 &1171779381
 Transform:
   m_ObjectHideFlags: 0
@@ -59497,11 +59457,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &1372084374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71168,6 +71123,7 @@ Transform:
   m_Children:
   - {fileID: 1104162131}
   - {fileID: 794790891}
+  - {fileID: 1972771949}
   - {fileID: 1492017511}
   - {fileID: 2066833694}
   m_Father: {fileID: 0}
@@ -74936,11 +74892,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &1614551192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80476,11 +80427,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &1755253978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86978,7 +86924,7 @@ GameObject:
   - component: {fileID: 1903656084}
   m_Layer: 0
   m_Name: boss
-  m_TagString: Untagged
+  m_TagString: boulet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87069,7 +87015,7 @@ MonoBehaviour:
   particules: {fileID: 1384566928}
   boulet: {fileID: 0}
   script: {fileID: 938723019}
-  health: 10
+  health: 15
 --- !u!1001 &1904160291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87495,7 +87441,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -89031,11 +88977,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!65 &1940740260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90775,6 +90716,172 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f661422815d8f204cb5f6dcf10f7e3d2, type: 3}
+--- !u!1 &1972771948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972771949}
+  - component: {fileID: 1972771952}
+  - component: {fileID: 1972771951}
+  - component: {fileID: 1972771950}
+  m_Layer: 0
+  m_Name: jumpscare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1972771949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972771948}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7473363, z: -0, w: 0.6644459}
+  m_LocalPosition: {x: -2.53, y: -8.22, z: 47.11}
+  m_LocalScale: {x: 3.664821, y: 3.4815652, z: 4.3818474}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1528757871}
+  m_LocalEulerAnglesHint: {x: 0, y: 96.72, z: 0}
+--- !u!114 &1972771950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972771948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e517ff355cbcc42b830a486968b482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 6cbd5b64ce2db394c8d220869cf88591, type: 3}
+  targetTag: Player
+  loopAudio: 0
+--- !u!82 &1972771951
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972771948}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6cbd5b64ce2db394c8d220869cf88591, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.2944946
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &1972771952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972771948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1972909743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96773,11 +96880,6 @@ MonoBehaviour:
   script: {fileID: 938723019}
   health: 2
   compte: 0
-  bravo: {fileID: 1024235718}
-  monJoueur: {fileID: 1024235718}
-  dollards: {fileID: 1024235718}
-  startPosition: {fileID: 1024235718}
-  boss: {fileID: 1024235718}
 --- !u!4 &2088423086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469676, guid: 8882443425560684dba932aaf44f3350,

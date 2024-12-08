@@ -20,6 +20,16 @@ public class archerFinal : MonoBehaviour
     public int health = 10; // Nombre de points de vie du boss
     private bool stop; // Empêche plusieurs actions simultanées
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("boulet") && !stop) // Vérifie si le boulet touche et empêche les collisions multiples
+        {
+            boulet = other.gameObject;
+            StartCoroutine(TakeDamage());
+        }
+    }
+
+
     IEnumerator TakeDamage()
     {
         stop = true; // Empêche plusieurs tirs simultanés
